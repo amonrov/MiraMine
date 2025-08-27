@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Контакты — MiraMine</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="contacts.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="logo">Mira<span class="logo__accent">Mine</span></div>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Главная</a></li>
+          <li><a href="#store" class="nav__link">Донат</a></li>
+          <li><a href="rules.html" class="nav__link">Правила</a></li>
+          <li><a href="contacts.html" class="nav__link active">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn btn--glow header__btn">Присоединиться</button>
+      <button id="theme-toggle" aria-label="Переключить тему" class="theme-toggle">🌙</button>
+    </div>
+  </header>
+
+  <main class="container" style="padding: 50px 0;">
+    <h1>Свяжитесь с нами</h1>
+    <p>Остались вопросы? Напишите нам в соцсетях:</p>
+
+    <div class="contacts-block">
+      <h2>Discord</h2>
+      <p>А ты уже есть в нашем Discord-сервере?<br>Скорее подключайся!</p>
+      <a href="https://discord.gg/ТВОЯ_ССЫЛКА" class="btn btn--glow">Подключиться</a>
+    </div>
+
+    <div class="contacts-block">
+      <h2>ВКонтакте</h2>
+      <p>Наша группа ВКонтакте: сообщество для игроков и лучшая техническая поддержка</p>
+      <a href="https://vk.com/ТВОЯ_ГРУППА" class="btn btn--glow">Подписаться</a>
+    </div>
+
+    <div class="contacts-block">
+      <h2>Электронная почта</h2>
+      <p>Имеются другие вопросы?<br>Пишите на нашу почту:</p>
+      <a href="mailto:support@miramine.ru" class="btn btn--outline">support@miramine.ru</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__legal">
+        <p>© 2025 MiraMine. Все права защищены.</p>
+        <nav>
+          <a href="#" class="footer__link">Политика конфиденциальности</a> |
+          <a href="#" class="footer__link">Договор оферты</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+main.container {
+  padding: 50px 0; 
+}
+
+main h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--pink);
+  text-shadow: 0 0 8px var(--purple);
+  margin-bottom: 0.5rem;
+}
+
+main > p {
+  text-align: center;
+  margin-bottom: 1.25rem;
+  font-size: 1.05rem;
+  color: #ddd;
+}
+
+body.light-theme main > p {
+  color: var(--soft-light-text);
+}
+
+.contacts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  align-items: start;
+  margin-top: 1.25rem;
+}
+
+.contacts-block {
+  background: rgba(255 255 255 / 0.06);
+  border-radius: 15px;
+  padding: 1.6rem 1.25rem;
+  box-shadow: 0 0 10px var(--pink);
+  color: var(--white);
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+  border: 2px solid transparent;
+  text-align: center;
+}
+
+.contacts-block:hover,
+.contacts-block:focus-within {
+  box-shadow: 0 0 25px var(--purple), 0 0 40px var(--pink);
+  transform: translateY(-6px);
+  border-color: var(--pink);
+  outline: none;
+}
+
+.contacts-block h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: var(--pink);
+  text-shadow: 0 0 6px var(--purple);
+}
+
+.contacts-block p {
+  margin-bottom: 1rem;
+  color: #ddd;
+}
+
+.contacts-block .btn--glow {
+  background: var(--gradient);
+  color: var(--white);
+  box-shadow: var(--shadow-neon);
+  text-shadow: 0 0 4px var(--pink);
+  display: inline-block;
+}
+
+.contacts-block .btn--glow:hover,
+.contacts-block .btn--glow:focus-visible {
+  transform: scale(1.04);
+  box-shadow: 0 0 20px var(--pink), 0 0 30px var(--purple);
+  outline: none;
+}
+
+.contacts-block .btn--outline {
+  background: transparent;
+  border: 2px solid var(--pink);
+  color: var(--pink);
+  display: inline-block;
+}
+
+.contacts-block .btn--outline:hover,
+.contacts-block .btn--outline:focus-visible {
+  background: var(--pink);
+  color: var(--black);
+  outline: none;
+}
+
+body.light-theme .contacts-block {
+  background: var(--soft-light-glass-bg);
+  color: var(--soft-light-text);
+  box-shadow: var(--soft-light-shadow);
+  border: 1px solid rgba(200,150,255,0.18);
+}
+
+body.light-theme .contacts-block h2 {
+  color: var(--soft-light-pink);
+  text-shadow: 0 0 6px var(--soft-light-purple);
+}
+
+body.light-theme .contacts-block .btn--glow {
+  background: linear-gradient(135deg,#d6c1f5,#f3c8ff);
+  color: var(--soft-light-text);
+  box-shadow: 0 0 10px rgba(213,164,255,0.6);
+}
+
+
+@media (max-width: 768px) {
+  .contacts-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .contacts-block {
+    padding: 1.25rem;
+  }
+}
